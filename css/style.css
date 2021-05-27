@@ -1,0 +1,32 @@
+header {background: url('../images/Banner_mage 2.png');background-repeat: no-repeat;background-size: cover;}
+.banrTxt {padding: 12% 0px;}
+
+.doctors #drList ul {display: inline-block;width: 49%;padding: 50px 20px;text-align: center;list-style: none;vertical-align: top;background: #F9F9FF;border-radius: 5px;/* height:430px; */}
+.doctors #drList ul:first-child{margin-right: 2%;}
+.bgGradient {background: linear-gradient(145deg, #64c8de, #5b7fe9);color: #fff !important;}
+
+.doctors #drList ul img {margin-bottom: 20px;box-shadow: 1px 1px 9px #ccc;}
+.doctors #drList ul h4 {font-size:21px;color:#1D5AA6;}
+.doctors #drList ul div {font-size:15px;color:#60a6e4;}
+.doctors #drList ul p {font-size:15px;height:80px;margin-top:20px;position:relative}
+.doctors #drList ul p:before {content:'';width: 40px;height: 2px;background: #22B78E;position:absolute;left: 46%;top: -9px;}
+.doctors h2,
+.testimonial h2 {color:#22B78E;margin-bottom:30px}
+
+#accordion .card {border:0px}
+#accordion .card .card-header{background:transparent !important;padding: 0px;}
+#accordion .card .card-header h5 button{display:block;padding: 23px;cursor:pointer !important;width: 100%;text-align: left;font-size: 20px;font-weight: 700;color: #1D5AA6;position:relative;text-decoration:none;}
+#accordion .card .card-header h5 button:after {content:'v';position:absolute;right:40px;}
+
+.testimonial .testi {box-shadow: 0px 0px 13px #efefef;border-radius: 6px;padding: 40px 20px;}
+.testimonial .testi .userImg img,
+.testimonial .testi .userImg div{display:inline-block;vertical-align:middle;}
+.testimonial .testi .userImg img:last-child{float:right}
+.testimonial .testi .title {margin-left:15px}
+.testimonial .testi h3 {margin:0px;font-size:22px;font-weight:700}
+.testimonial .testi p {font-size:14px;}
+.testimonial .testContent {margin-top:20px}
+.testimonial .testi .title p {position: relative;}
+.testimonial .testi .title p:after{content:'';width:30px;height:1px;background:#ccc;position:absolute;bottom:-3px;left:0;}
+
+footer .socialIcons li{display:inline-block;margin-right: 3px;}

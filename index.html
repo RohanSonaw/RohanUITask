@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aster CMI</title>
+	<link rel="icon" href="images/favicon.png">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+	
+</head>
+<body>
+
+	<!-- Header Section Start -->
+
+	<header class="py-4">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 pt-4">
+					<img src="images/Aster_logo_white.png" width="239px">
+					<div class="banrTxt text-white">
+						<h3>KIDNEY TRANSPLANT PROGRAMME</h3>
+						<p>Robotic kidney transplant | Nephrology </p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="enqueryForm bg-white p-4">
+						<form onsubmit="return validate()" novalidate action="register.jsp" method="POST">
+			                <h4>Enquire now</h4>
+			                
+			                <div class="form-group">
+			                  <input type="text" class="form-control name-field" placeholder="Name">
+			                  <small class="form-text text-danger ml-3 name-field-msg"></small>
+			                </div>
+
+			                <div class="form-group">
+			                  <input type="email" class="form-control email-field" placeholder="Email ID">
+			                  <small class="form-text text-danger ml-3 email-field-msg"></small>
+			                </div>
+
+			                <div class="form-group">
+			                  <input type="mobile" class="form-control phone-field" placeholder="Phone number" maxlength="10">
+			                  <small class="form-text text-danger ml-3 phone-field-msg"></small>
+			                </div>
+
+			                <div class="form-group">
+			                	<textarea class="form-control" rows="3" placeholder="Your Message"></textarea>
+			                </div>
+
+			                <div class="form-group">
+	                            <div class="g-recaptcha" data-sitekey="6LfKURIUAAAAAO50vlwWZkyK_G2ywqE52NU7YO0S" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+	                            <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
+	                            <div class="help-block with-errors"></div>
+	                        </div>
+			                <div class="form-group">
+			                  <button class="btn btn-danger py-2 px-4"><b>Submit</b></button>
+			                </div>
+			            </form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Header Section End -->
+
+	<!-- Donor Transplant Operation Start -->
+	
+	<section class="donerSec pt-5 pb-2">
+		<div class="container">
+			<div class="row"> 
+				<div class="col-md-5">
+					<img src="images/donr.png" width="100%">
+				</div>
+				<div class="col-md-7 p-4">
+					<div class="p-4 mb-4 bg-primary text-white rounded">
+						<p class="m-0">Once the doctors have decided that donor and recipient are fit to undergo the surgery and permission has been granted for the same by the competent authority/ authorization committee, a day will be fixed for the live donor transplant operation. The patient and the donor have to get admitted to the hospital at least 48 hours before the operation.  It's mandatory that both patient and the donor again undergo tissue or lymphocyte cross match test to make sure that the kidney recipient has not formed any antibodies to donor tissues at this stage. One has to understand that these antibodies can appear at any time even if they were not detected at the time of preliminary tests.</p>
+					</div>
+					<p>Before surgery, the donor and the recipient along with their immediate family members will be counseled again regarding the advantages and disadvantages of the kidney transplant. One can still decide to undergo the operation or reject at this stage also. The process of counseling and consent for the surgery will be video graphed and documented.</p>
+				</div>
+				<div class="col-sm-12 py-4">
+					<p>Patient and the family should understand that kidney transplant surgery is not a 100% successful surgery. Five to ten percent of kidneys may not work and patient has to go back on dialysis immediately, or with in short time due to nonfunctioning of the transplanted kidney. The rejected or nonfunctioning kidney cannot be putback to the donor under usual circumstances.</p>
+					<hr>
+					<p>The donor and the recipient will be operated upon simultaneously by team of doctors. The kidney removed from the donor will be handed over to the team of doctors operating the kidney recipient immediately, and the kidney will be attached to blood vessels in the lower part of the abdomen as shown in the figure below</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Donor Transplant Operation End -->
+
+	<!-- Doctor Section Start -->
+
+	<section class="py-2 doctors">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>Doctors</h2>
+					<div id="drList"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Doctor Section Start -->
+
+	<!-- Accordian Section Start -->
+
+	<section class="py-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div id="accordion">
+						<div class="card">
+						    <div class="card-header" id="headingOne">
+						      <h5 class="mb-0">
+						        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						        Who should undergo Kidney Transplant?
+						        </button>
+						      </h5>
+						    </div>
+
+						    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+						      <div class="card-body">
+						        One has to undergo kidney transplantation when the kidneys have completely failed and are dependent on dialysis for survival and there is no possibility of recovery from the kidney failure. This stage of kidney failure is called end stage kidney disease or CKD Stage 5 D+. Kidney transplant is a procedure where in a kidney from a suitable healthy living donor or a deceased (cadaver) donor is transplanted to a patient with end stage kidney failure.
+						      </div>
+						    </div>
+						</div>
+						<div class="card">
+						    <div class="card-header" id="headingTwo">
+						      <h5 class="mb-0">
+						        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+						        Am I a right Candidate for Kidney transplant?
+						        </button>
+						      </h5>
+						    </div>
+
+						    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+						      <div class="card-body">
+						        One has to undergo kidney transplantation when the kidneys have completely failed and are dependent on dialysis for survival and there is no possibility of recovery from the kidney failure. This stage of kidney failure is called end stage kidney disease or CKD Stage 5 D+. Kidney transplant is a procedure where in a kidney from a suitable healthy living donor or a deceased (cadaver) donor is transplanted to a patient with end stage kidney failure.
+						      </div>
+						    </div>
+						</div>
+						<div class="card">
+						    <div class="card-header" id="headingThree">
+						      <h5 class="mb-0">
+						        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+						        What is the Criteria for Donor Selection?
+						        </button>
+						      </h5>
+						    </div>
+
+						    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+						      <div class="card-body">
+						        One has to undergo kidney transplantation when the kidneys have completely failed and are dependent on dialysis for survival and there is no possibility of recovery from the kidney failure. This stage of kidney failure is called end stage kidney disease or CKD Stage 5 D+. Kidney transplant is a procedure where in a kidney from a suitable healthy living donor or a deceased (cadaver) donor is transplanted to a patient with end stage kidney failure.
+						      </div>
+						    </div>
+						</div>
+						<div class="card">
+						    <div class="card-header" id="headingFour">
+						      <h5 class="mb-0">
+						        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+						        What are the Types of donors
+						        </button>
+						      </h5>
+						    </div>
+
+						    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+						      <div class="card-body">
+						        One has to undergo kidney transplantation when the kidneys have completely failed and are dependent on dialysis for survival and there is no possibility of recovery from the kidney failure. This stage of kidney failure is called end stage kidney disease or CKD Stage 5 D+. Kidney transplant is a procedure where in a kidney from a suitable healthy living donor or a deceased (cadaver) donor is transplanted to a patient with end stage kidney failure.
+						      </div>
+						    </div>
+						</div>
+						<div class="card">
+						    <div class="card-header" id="headingFive">
+						      <h5 class="mb-0">
+						        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+						        How to register patients for Deceased donor transplant?
+						        </button>
+						      </h5>
+						    </div>
+
+						    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+						      <div class="card-body">
+						        One has to undergo kidney transplantation when the kidneys have completely failed and are dependent on dialysis for survival and there is no possibility of recovery from the kidney failure. This stage of kidney failure is called end stage kidney disease or CKD Stage 5 D+. Kidney transplant is a procedure where in a kidney from a suitable healthy living donor or a deceased (cadaver) donor is transplanted to a patient with end stage kidney failure.
+						      </div>
+						    </div>
+						</div>
+						<div class="card">
+						    <div class="card-header" id="headingSix">
+						      <h5 class="mb-0">
+						        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+						        What are the Advantages of a successful Kidney  transplant ? 
+						        </button>
+						      </h5>
+						    </div>
+
+						    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+						      <div class="card-body">
+						        One has to undergo kidney transplantation when the kidneys have completely failed and are dependent on dialysis for survival and there is no possibility of recovery from the kidney failure. This stage of kidney failure is called end stage kidney disease or CKD Stage 5 D+. Kidney transplant is a procedure where in a kidney from a suitable healthy living donor or a deceased (cadaver) donor is transplanted to a patient with end stage kidney failure.
+						      </div>
+						    </div>
+						</div>
+						<div class="card">
+						    <div class="card-header" id="headingSeven">
+						      <h5 class="mb-0">
+						        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+						        What is the Outcome of kidney transplant surgery
+						        </button>
+						      </h5>
+						    </div>
+
+						    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+						      <div class="card-body">
+						        One has to undergo kidney transplantation when the kidneys have completely failed and are dependent on dialysis for survival and there is no possibility of recovery from the kidney failure. This stage of kidney failure is called end stage kidney disease or CKD Stage 5 D+. Kidney transplant is a procedure where in a kidney from a suitable healthy living donor or a deceased (cadaver) donor is transplanted to a patient with end stage kidney failure.
+						      </div>
+						    </div>
+						</div>
+					</div>					
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Accordian Section End -->
+
+	<!-- Testimonial Section Start -->
+
+	<section class="py-5 testimonial bg-gray">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>Testimonial</h2>
+					<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+				</div>
+			</div>
+
+			<div class="row mt-4">
+				<div class="col-sm-6">
+					<div class="testi">
+						<div class="userImg">
+							<img src="images/Bitmap.png">
+							<div class="title">
+								<h3>Jhon Doe</h3>
+								<p>Softwere Engineer</p>
+							</div>
+							<img src="images/quote.png">
+						</div>
+						<div class="testContent">
+							<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6">
+					<div class="testi">
+						<div class="userImg">
+							<img src="images/Bitmap.png">
+							<div class="title">
+								<h3>Jhon Doe</h3>
+								<p>Softwere Engineer</p>
+							</div>
+							<img src="images/quote.png">
+						</div>
+						<div class="testContent">
+							<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- Testimonial Section End -->
+
+	<!-- Footer Section Start -->
+	<footer class="py-5 bg-dark">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<ul class="pt-3 pb-2 m-0 socialIcons p-0">
+						<li><a href="#"><img src="images/facebook.png"></a></li>
+						<li><a href="#"><img src="images/instagram.png"></a></li>
+						<li><a href="#"><img src="images/youtube.png"></a></li>
+						<li><a href="#"><img src="images/twitter.png"></a></li>
+						<li><a href="#"><img src="images/linkedin.png"></a></li>
+						<li class="float-right uparrow"><a href="#"><img src="images/uparrow.png"></a></li>
+					</ul>
+					<br>
+					<div class="py-3 text-white border-top">
+						<p>Aster CMI. All Rights Reserved</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer Section End -->
+
+	<script type="text/javascript" src="js/data.js"></script>
+	<script type="text/javascript" src="js/accordianData.js"></script>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
